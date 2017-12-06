@@ -1,0 +1,20 @@
+extends base
+
+block title
+    title React &mdash; Waves Light Blue
+
+block vars
+    - var bodyClass = 'waves-light-blue-skin'
+    - var formType = 'human'
+
+block spinner
+    .spinner-double-section
+
+block hero
+    section#hero.hero.full-height.valign-wrapper.scrollspy
+        h1.center Making your ideas<br>come to life
+        canvas#waves.waves
+
+block skin-script
+    script(src='./libs/sine-waves/sine-waves.min.js')
+    script(src='./assets/js/skins/min/waves-light-blue.min.js')

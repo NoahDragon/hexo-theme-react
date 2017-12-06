@@ -1,0 +1,35 @@
+.rectangle {
+    padding-bottom: 66.67%;
+}
+
+.rectangle-50 {
+    padding-bottom: 50%;
+
+    @media #{$small-and-down} {
+        padding-bottom: 66.67%;
+    }
+}
+
+.square {
+    padding-bottom: 100%;
+}
+
+.rectangle,
+.rectangle-50,
+.square {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    > .content {
+        position: absolute;
+        width: 100%;
+
+        div {
+            width: 100%;
+        }
+    }
+}

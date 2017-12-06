@@ -1,0 +1,48 @@
+// Colors
+$button-background: color('deep-purple', 'accent-2');
+$button-color: $white;
+$h1-color: color('pink', 'accent-2');
+
+// Skin customisation
+.combustion-purple-skin {
+    .navbar-fixed {
+        height: 0;
+    }
+
+    .btn,
+    .btn-large {
+        color: $button-color;
+        background-color: $button-background;
+    }
+
+    .hero {
+        background-color: color('grey', 'lighten-4');
+    }
+
+    h1 {
+        @include transform(translateY(-50%));
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        width: 100%;
+        padding: 0 3rem;
+        margin: 0;
+        font-size: 8rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: $h1-color;
+        text-align: center;
+        text-transform: uppercase;
+        mix-blend-mode: difference;
+
+        @media #{$medium-and-down} {
+            padding: 0 2rem;
+            font-size: 6rem;
+        }
+
+        @media #{$small-and-down} {
+            padding: 0 1rem;
+            font-size: 4rem;
+        }
+    }
+}

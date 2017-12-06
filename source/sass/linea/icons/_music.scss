@@ -1,0 +1,44 @@
+$icon_music_path:                                   $path + 'music/';
+$icon_music_name:                                   'linea-music-10';
+$icon_music_short:                                  'music';
+
+@font-face {
+  @include icon-font-face($icon_music_name, $icon_music_path)
+}
+
+[class^="icon-#{$icon_music_short}"],
+[class*="icon-#{$icon_music_short}"] {
+    font-family: $icon_music_name;
+    @include ico-font-base;
+}
+
+.icon-music-beginning-button                      { &:before { content: "a"; } }
+.icon-music-bell                                  { &:before { content: "b"; } }
+.icon-music-cd                                    { &:before { content: "c"; } }
+.icon-music-diapason                              { &:before { content: "d"; } }
+.icon-music-eject-button                          { &:before { content: "e"; } }
+.icon-music-end-button                            { &:before { content: "f"; } }
+.icon-music-fastforward-button                    { &:before { content: "g"; } }
+.icon-music-headphones                            { &:before { content: "h"; } }
+.icon-music-ipod                                  { &:before { content: "i"; } }
+.icon-music-loudspeaker                           { &:before { content: "j"; } }
+.icon-music-microphone                            { &:before { content: "k"; } }
+.icon-music-microphone-old                        { &:before { content: "l"; } }
+.icon-music-mixer                                 { &:before { content: "m"; } }
+.icon-music-mute                                  { &:before { content: "n"; } }
+.icon-music-note-multiple                         { &:before { content: "o"; } }
+.icon-music-note-single                           { &:before { content: "p"; } }
+.icon-music-pause-button                          { &:before { content: "q"; } }
+.icon-music-play-button                           { &:before { content: "r"; } }
+.icon-music-playlist                              { &:before { content: "s"; } }
+.icon-music-radio-ghettoblaster                   { &:before { content: "t"; } }
+.icon-music-radio-portable                        { &:before { content: "u"; } }
+.icon-music-record                                { &:before { content: "v"; } }
+.icon-music-recordplayer                          { &:before { content: "w"; } }
+.icon-music-repeat-button                         { &:before { content: "x"; } }
+.icon-music-rewind-button                         { &:before { content: "y"; } }
+.icon-music-shuffle-button                        { &:before { content: "z"; } }
+.icon-music-stop-button                           { &:before { content: "A"; } }
+.icon-music-tape                                  { &:before { content: "B"; } }
+.icon-music-volume-down                           { &:before { content: "C"; } }
+.icon-music-volume-up                             { &:before { content: "D"; } }

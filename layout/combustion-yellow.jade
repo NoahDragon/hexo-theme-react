@@ -1,0 +1,19 @@
+extends base
+
+block title
+    title React &mdash; Combustion Yellow
+
+block vars
+    - var bodyClass = 'combustion-yellow-skin'
+    - var formType = 'human'
+
+block spinner
+    .spinner-double-dot-out
+
+block hero
+    section#hero.hero.full-height.valign-wrapper.scrollspy
+        canvas#canvas
+    h1.center We make cool stuff
+
+block skin-script
+    script(src='./assets/js/skins/min/combustion-yellow.min.js')

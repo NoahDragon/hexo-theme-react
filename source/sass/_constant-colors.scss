@@ -1,0 +1,27 @@
+// Global colors
+$black: #191919;
+$white: #fff;
+$grey: color('grey', 'base');
+$light-grey: color('grey', 'lighten-4');
+$background-color: $white;
+
+// Used in _nav.scss
+$nav-item-border-color: 'grey';
+
+// Used in _social.scss
+$facebook: #3b5998;
+$twitter: #4099ff;
+$dribbble: #c73b6f;
+$github: #999;
+$vk: #2b587a;
+$linkedin: #4075b4;
+$googleplus: #c24e40;
+$pinterest: #bd081c;
+
+// Used for toasts
+$error: color('red', 'accent-2');
+$success: color('green', 'accent-3');
+
+// Used in _contact.scss
+$input-background: transparentize(color('grey', 'base'), .9);
+$input-background-focus: transparentize(color('grey', 'base'), .7);

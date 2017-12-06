@@ -1,0 +1,20 @@
+extends base
+
+block title
+    title React &mdash; Waves Deep Purple
+
+block vars
+    - var bodyClass = 'waves-deep-purple-skin'
+    - var formType = 'classic'
+
+block spinner
+    .spinner-double-section
+
+block hero
+    section#hero.hero.full-height.valign-wrapper.scrollspy
+        h1.center Developing beautiful things that make a difference
+        canvas#waves.waves
+
+block skin-script
+    script(src='./libs/sine-waves/sine-waves.min.js')
+    script(src='./assets/js/skins/min/waves-deep-purple.min.js')

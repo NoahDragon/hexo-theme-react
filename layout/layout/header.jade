@@ -1,0 +1,44 @@
+// Navigation bar
+header.navbar-fixed
+    nav
+        .container
+            .nav-wrapper
+                a.brand-logo(href='#!') React
+
+                // Default navigation
+                ul.right.hide-on-med-and-down.table-of-contents
+                    li
+                        a(href='#hero') Home
+                    li
+                        a(href='#projects') Projects
+                    li
+                        a(href='#services') Services
+                    li
+                        a(href='#prices') Prices
+                    li
+                        a(href='#about') About
+                    li
+                        a(href='#blog') Blog
+                    li
+                        a(href='#contact') Contact
+
+                // Visible on medium and smaller devices
+                ul#slide-out.side-nav
+                    li
+                        a(href='#hero') Home
+                    li
+                        a(href='#projects') Projects
+                    li
+                        a(href='#services') Services
+                    li
+                        a(href='#prices') Prices
+                    li
+                        a(href='#about') About
+                    li
+                        a(href='#blog') Blog
+                    li
+                        a(href='#contact') Contact
+
+                // Hamburger
+                a.button-collapse.valign-wrapper(href='#', data-activates='slide-out')
+                    .hamburger

@@ -1,0 +1,27 @@
+.owl-carousel {
+    .col {
+        padding: 0;
+    }
+
+    .owl-item {
+        -webkit-transform: translateZ(0) scale(1.0, 1.0);
+        -webkit-backface-visibility: hidden;
+    }
+
+    .owl-dot {
+        display: inline-block;
+        margin-right: .5rem;
+
+        span {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: color('grey', 'lighten-3');
+            border-radius: 50%;
+        }
+
+        &.active span {
+            background: color('grey', 'lighten-1');
+        }
+    }
+}

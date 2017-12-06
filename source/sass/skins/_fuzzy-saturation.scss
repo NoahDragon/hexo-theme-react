@@ -1,0 +1,49 @@
+// Colors
+$button-background: $black;
+$button-color: $white;
+
+// Skin customisation
+.fuzzy-saturation-skin {
+    .navbar-fixed {
+        height: 0;
+    }
+
+    .btn,
+    .btn-large {
+        color: $button-color;
+        background-color: $button-background;
+    }
+
+    .hero {
+        background-color: color('grey', 'lighten-4');
+    }
+
+    h1 {
+        position: absolute;
+        top: 30%;
+        z-index: 10;
+        width: 100%;
+        padding: 0 4rem;
+        margin: 0;
+        font-size: 5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: $black;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media #{$small-and-down} {
+            padding: 0 1rem;
+            font-size: 3rem;
+        }
+    }
+
+    .rectangle,
+    .rectangle-50,
+    .square,
+    img,
+    .social a,
+    #map {
+        @include filter(grayscale(100%));
+    }
+}

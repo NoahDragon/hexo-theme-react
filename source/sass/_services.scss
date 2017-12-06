@@ -1,0 +1,85 @@
+.services {
+    .col > div {
+        background-color: $light-grey;
+    }
+}
+
+.service-items {
+    .content {
+        @include display(flex);
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+        height: 100%;
+        padding: 0 1rem;
+
+        i {
+            //@include transition(opacity .4s $ease-out-circ);
+            @include transition-property(transform, opacity);
+            @include transition-duration(0s, 0s);
+            @include transition-timing-function(linear, $ease-out-circ);
+            opacity: 1;
+
+            @media #{$small-and-down} {
+                @include transition(none);
+                @include transform(translateY(-120%));
+            }
+        }
+
+        h4,
+        p {
+            @include transition(opacity .4s $ease-out-circ);
+            width: 100%;
+            padding: 0 1.5rem;
+            text-align: center;
+            cursor: default;
+            opacity: 0;
+
+            @media #{$small-and-down} {
+                opacity: 1;
+            }
+        }
+
+        p {
+            @media only screen and (min-width: 993px) and (max-width: 1100px) {
+                font-size: 1.3rem;
+            }
+        }
+
+        h4 {
+            @media #{$small-and-down} {
+                font-size: 1.4rem;
+            }
+        }
+
+        .description {
+            @include transform(translateY(-50%));
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+            @media #{$small-and-down} {
+                top: 65%;
+            }
+        }
+
+        &:hover {
+            h4,
+            p {
+                opacity: 1;
+            }
+
+            i {
+                @include transition-property(transform, opacity);
+                @include transition-duration(10s, .4s);
+                @include transition-timing-function(linear, $ease-out-circ);
+                @include transform(scale(2));
+                opacity: .1;
+
+                @media #{$small-and-down} {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
