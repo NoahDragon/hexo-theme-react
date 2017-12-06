@@ -1,4 +1,4 @@
-Hexo Theme Sin
+Hexo Theme React
 ---------------------
 
-Sin does not mean the guilty inside the sprite, but the beautity of math.
+React theme migrated from https://github.com/pimmey/react-docs
