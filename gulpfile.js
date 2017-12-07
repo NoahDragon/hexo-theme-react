@@ -20,11 +20,11 @@ var uglify = require('gulp-uglify');
 /*
  Directory variables
  */
-var sassSrcDir = './src/sass/';
-var jadeSrcDir = './src/jade/';
-var assetsDir = './assets/';
+var sassSrcDir = './source/sass/';
+var jadeSrcDir = './layout/';
+var assetsDir = './source/assets/';
 var compiledStylesDir = assetsDir + 'css/';
-var libsDir = './libs/';
+var libsDir = './source/libs/';
 
 /*
  Compiling sass, using sourcemaps
