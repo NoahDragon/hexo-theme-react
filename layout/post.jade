@@ -1,0 +1,40 @@
+// Post 1
+-
+  - var p = page.posts.toArray()
+    if is_home()
+    a.col.s12.l6.padding-bottom.modal-trigger(href='#post1')
+        .rectangle(style='background-image: url(./assets/images/blog/colorful-lady.jpg)')
+          .content.valign-wrapper.center
+              div= `${p[0].title} | ${config.title}`
+                  small
+                      time(datetime='2016-10-01T21:00') 10/01/2016
+                      | &nbsp;by Annie
+    // Post 1 modal
+    #post1.modal.bottom-sheet
+      .modal-close.absolute &times;
+      .modal-cover
+          .rectangle-50(style='background-image: url(./assets/images/blog/colorful-lady.jpg)')
+      .modal-content
+          .row
+              .col.s12.l8.offset-l2
+                  h4= `${p[0].title} | ${config.title}`
+
+                  p.flow-text.grey-text.
+                      Author: Annie<br>
+                      Date: 10/01/2016
+
+                  .divider
+
+                  section !{p[0].content}
+
+                  .divider
+
+          .row
+              .col.s12.center
+                  p.flow-text Share this
+                  p.flow-text.social
+                      a.facebook(href='#!') facebook
+                      a.googleplus(href='#!') google+
+                      a.vk(href='#!') vk
+                      a.twitter(href='#!') twitter
+                      a.pinterest(href='#!') pinterest
