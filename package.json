@@ -29,5 +29,6 @@
     "gulp-watch": "^4.3.5",
     "gulp-zip": "^3.1.0",
     "imagemin-pngquant": "^4.2.0"
-  }
+  },
+  "dependencies": {}
 }
