@@ -6,7 +6,7 @@
     "version": "3.4.3"
   },
   "scripts": {
-      "build": "hexo generate"
+      "build": "git submodule update --recursive && hexo generate"
   },
   "dependencies": {
     "hexo": "^3.2.0",
