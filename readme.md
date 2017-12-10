@@ -31,3 +31,20 @@ Clean the database and regenerate the site:
 ```
 hexo clean && hexo g
 ```
+
+## Usage
+
+### Blog Author
+
+If `author` is not set in the front matters, then `author` in config file will be used.
+
+### Featured Images
+
+Set the image path in the front matter as:
+
+```
+featured: /img/featured_image.jpg
+```
+
+Then make sure the `featured_image.jpg` is under the `source/img` folder.
+

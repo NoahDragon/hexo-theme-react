@@ -1,14 +1,15 @@
 // Post 1
  
-- var p = page.posts.toArray()
 if is_home()
+- var p = page.posts.toArray()
+- var author = p[0].author || config.author
     a.col.s12.l6.padding-bottom.modal-trigger(href='#post1')
-        .rectangle(style='background-image: url(./assets/images/blog/colorful-lady.jpg)')
+        .rectangle(style='background-image: url(' + `${url_for(p[0].featured)}` +')')
           .content.valign-wrapper.center
               div= `${p[0].title} | ${config.title}`
                   small
-                      time(datetime='2016-10-01T21:00') 10/01/2016
-                      | &nbsp;by Annie
+                      time(datetime=`${p[0].date}`) #{p[0].date.format("YYYY-MM-DD")} 
+                      | &nbsp;by #{author}
     // Post 1 modal
     #post1.modal.bottom-sheet
       .modal-close.absolute &times;
@@ -20,8 +21,8 @@ if is_home()
                   h4= `${p[0].title} | ${config.title}`
 
                   p.flow-text.grey-text.
-                      Author: Annie<br>
-                      Date: 10/01/2016
+                      Author: #{author}<br>
+                      Date: #{p[0].date}
 
                   .divider
 

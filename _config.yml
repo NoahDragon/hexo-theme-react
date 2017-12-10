@@ -1,0 +1,8 @@
+menu: # To remove a menu, just leave the value blank.
+  home: Home
+  projects: Projects
+  services: 
+  prices: 
+  blog: Blog
+  about: About
+  contact: 
