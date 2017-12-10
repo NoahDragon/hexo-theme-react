@@ -1,20 +1,12 @@
+include ../mixins/home-posts.jade
+
 section#blog.blog.scrollspy
     .container
         h2: span Blog
         h3 Get more personal
         .row.posts
-            include ../post
-
-            include ../posts/_colorful-lady
-
-            include ../posts/_pink
-
-            include ../posts/_friendship
-
-            include ../posts/_guy-with-water
-
-            include ../posts/_going-out
-
+            +posts
+        
         .row.extra-padding.narrow-row
             h3 Get more social
             .flow-text.social.huge.center

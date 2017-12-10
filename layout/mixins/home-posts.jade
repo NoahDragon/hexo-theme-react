@@ -1,0 +1,56 @@
+mixin posts
+    - var posts = page.posts.toArray()
+    - var author, anchor
+    - var i = 0
+    each post in posts
+        if i == 5
+            - break
+        - author = post.author || config.author
+        - anchor = 'post' + i
+        if i < 2
+            a.col.s12.l6.padding-bottom.modal-trigger(href='#' + `${anchor}`)
+                .rectangle(style='background-image: url(' + `${url_for(post.featured)}` +')')
+                  .content.valign-wrapper.center
+                      div= `${post.title}`
+                          small
+                              time(datetime=`${post.date}`) #{posts[i].date.format("YYYY-MM-DD")} 
+                              | &nbsp;by #{author}
+        else
+            a.col.s12.l4.padding-bottom.modal-trigger(href=`${anchor}`)
+                .square(style='background-image: url(' + `${url_for(post.featured)}` +')')
+                  .content.valign-wrapper.center
+                      .smaller= `${post.title}`
+                          small
+                              time(datetime=`${post.date}`) #{posts[i].date.format("YYYY-MM-DD")} 
+                              | &nbsp;by #{author}
+            
+        // Post modal
+        div(id=`${anchor}`).modal.bottom-sheet
+            .modal-close.absolute &times;
+            .modal-cover
+                .rectangle-50(style='background-image: url(./assets/images/blog/colorful-lady.jpg)')
+            .modal-content
+                .row
+                    .col.s12.l8.offset-l2
+                        h4= `${post.title}`
+
+                        p.flow-text.grey-text.
+                            Author: #{author}<br>
+                            Date: #{post.date}
+
+                        .divider
+
+                        section !{post.content}
+
+                        .divider
+
+                .row
+                    .col.s12.center
+                        p.flow-text Share this
+                        p.flow-text.social
+                            a.facebook(href='#!') facebook
+                            a.googleplus(href='#!') google+
+                            a.vk(href='#!') vk
+                            a.twitter(href='#!') twitter
+                            a.pinterest(href='#!') pinterest
+        - i++
