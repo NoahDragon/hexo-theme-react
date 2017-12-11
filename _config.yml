@@ -77,4 +77,5 @@ theme: react
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@bitbucket.org:l3z/l3z.bitbucket.io.git

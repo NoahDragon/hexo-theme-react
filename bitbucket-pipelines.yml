@@ -14,3 +14,4 @@ pipelines:
           - npm install
           - npm run prepare
           - npm run build
+          - npm run deploy
