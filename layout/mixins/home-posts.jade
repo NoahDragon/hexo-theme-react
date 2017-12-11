@@ -1,7 +1,7 @@
 include modal-content
 
 mixin top5posts
-        - var ps = site.posts.toArray()
+        - var ps = site.posts.toArray().sort(function(a,b){return a.date < b.date})
         - var author, anchor, featured, background
         - var i = 0
         each post in ps
