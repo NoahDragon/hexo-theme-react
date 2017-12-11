@@ -6,7 +6,7 @@
     "version": "3.4.3"
   },
   "scripts": {
-      "prepare": "git submodule init && git submodule update"
+      "prepare": "git submodule init && git submodule update",
       "build": "hexo generate"
   },
   "dependencies": {
