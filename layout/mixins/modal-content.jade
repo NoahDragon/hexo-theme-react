@@ -1,5 +1,5 @@
 // Post modal
-mixin content(post, author, anchor, background)
+mixin content(post, author, anchor, background, isPost)
     div(id=`${anchor}`).modal.bottom-sheet
         .modal-close.absolute &times;
         .modal-cover
@@ -9,9 +9,15 @@ mixin content(post, author, anchor, background)
                 .col.s12.l8.offset-l2
                     h4= `${post.title}`
 
-                    p.flow-text.grey-text.
-                        Author: #{author}<br>
-                        Date: #{post.date}
+                    if isPost
+                        p.flow-text.grey-text.
+                            Author: #{author}<br>
+                            Date: #{post.date}
+                    else
+                        p.flow-text.grey-text.
+                            Client: #{post.client}<br>
+                            Category: #{post.category}<br>
+                            Task: #{post.task}
 
                     .divider
 

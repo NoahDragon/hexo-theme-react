@@ -5,6 +5,8 @@ mixin top5posts
         - var author, anchor, featured, background
         - var i = 0
         each post in ps
+            if post.layout != 'post'
+                - continue
             if i == 5
                 - break
             - author = post.author || config.author
@@ -28,5 +30,5 @@ mixin top5posts
                                   time(datetime=`${post.date}`) #{post.date.format("YYYY-MM-DD")} 
                                   | &nbsp;by #{author}
             
-            +content(post, author, anchor, background)
+            +content(post, author, anchor, background, 1)
             - i++

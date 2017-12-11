@@ -1,7 +1,7 @@
 include modal-content
 
 mixin top5projects
-        - var ps = site.pages.toArray()
+        - var ps = site.posts.toArray()
         - var author, anchor, featured, background
         - var i = 0
         each post in ps
@@ -24,5 +24,5 @@ mixin top5projects
                       .content.valign-wrapper.center
                           div= `${post.title}`
             
-            +content(post, author, anchor, background)
+            +content(post, author, anchor, background, 0)
             - i++
