@@ -5,7 +5,7 @@ background: /img/default-background.jpg
 layout: project
 date: 2017-12-10 23:44:40
 client: SomeHR
-category: New Tech
+cate: New Tech
 task: Replace HR
 author:
 ---

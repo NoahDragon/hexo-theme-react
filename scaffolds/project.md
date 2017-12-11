@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 client:
-category:
+cate:
 task:
 author:
 featured: /img/default-new-blog.jpg
