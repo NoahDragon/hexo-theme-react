@@ -1,0 +1,36 @@
+include ../mixins/home-posts.jade
+
+section#blog.blog.scrollspy
+    .container
+        h2: span Blog
+        h3 Get more personal
+        .row.posts
+            +top5posts
+        
+        .row.extra-padding.narrow-row
+            h3 Get more social
+            .flow-text.social.huge.center
+                a.col.s6.m4.l3.waves-effect.waves-light.github(href='#!')
+                    .rectangle
+                        .content.valign-wrapper github
+                a.col.s6.m4.l3.waves-effect.waves-light.facebook(href='#!')
+                    .rectangle
+                        .content.valign-wrapper facebook
+                a.col.s6.m4.l3.waves-effect.waves-light.googleplus(href='#!')
+                    .rectangle
+                        .content.valign-wrapper google+
+                a.col.s6.m4.l3.waves-effect.waves-light.linkedin(href='#!')
+                    .rectangle
+                        .content.valign-wrapper linkedin
+                a.col.s6.m4.l3.waves-effect.waves-light.vk(href='#!')
+                    .rectangle
+                        .content.valign-wrapper vk
+                a.col.s6.m4.l3.waves-effect.waves-light.pinterest(href='#!')
+                    .rectangle
+                        .content.valign-wrapper pinterest
+                a.col.s6.m4.l3.waves-effect.waves-light.twitter(href='#!')
+                    .rectangle
+                        .content.valign-wrapper twitter
+                a.col.s6.m4.l3.waves-effect.waves-light.dribbble(href='#!')
+                    .rectangle
+                        .content.valign-wrapper dribbble

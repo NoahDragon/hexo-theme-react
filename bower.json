@@ -1,0 +1,32 @@
+{
+  "name": "React 2",
+  "authors": [
+    "Yegor Borisenco <pimmey@pimmey.com>"
+  ],
+  "description": "Themeforest theme",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "Theme",
+    "material"
+  ],
+  "license": "MIT",
+  "homepage": "remember-me.pimmey.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#~0.97.5",
+    "owl.carousel": "~2.0.0-beta.3",
+    "ajaxchimp": "~1.3.0",
+    "three.js": "~0.73.0",
+    "sine-waves": "~0.3.0"
+  },
+  "devDependencies": {
+    "bourbon": "~4.2.6"
+  }
+}

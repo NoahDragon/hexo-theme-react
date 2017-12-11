@@ -1,0 +1,59 @@
+.blog {
+    .posts {
+        .content {
+            height: 100%;
+
+            div {
+                @include transform(translate3d(0, 100%, 0));
+                @include transition(all 0s linear);
+                padding: 0 1rem;
+                font-size: 4rem;
+                line-height: 4rem;
+                color: $white;
+                opacity: 0;
+
+                @media #{$small-and-down} {
+                    @include transform(translate3d(0, 0, 0));
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    text-shadow: 0 1px 1px transparentize($black, .75);
+                    opacity: 1;
+                }
+
+                small {
+                    display: block;
+                    font-size: 1.5rem;
+                    font-weight: 200;
+
+                    @media #{$small-and-down} {
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            @media #{$small-and-down} {
+                background: transparentize($black, .75);
+            }
+
+            .smaller {
+                font-size: 2rem;
+                line-height: 2rem;
+
+                small {
+                    font-size: 1rem;
+                }
+            }
+
+            &:hover {
+                background-color: transparentize($black, .3);
+
+                div {
+                    @include transform(translate3d(0, 0, 0));
+                    @include transition(all .3s $ease-out-circ);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

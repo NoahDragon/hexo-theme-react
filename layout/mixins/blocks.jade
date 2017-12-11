@@ -1,0 +1,19 @@
+mixin blocks
+    - for ( var key in theme.menu )
+        if key == 'home' && theme.menu[key]
+            block hero
+                section#hero.hero.full-height.valign-wrapper.scrollspy
+                    #ring.ring
+                    h1.center Digital &amp; creative
+        if key == 'projects' && theme.menu[key]
+            include ../sections/_projects
+        if key == 'services' && theme.menu[key]
+            include ../sections/_services
+        if key == 'prices' && theme.menu[key]
+            include ../sections/_prices
+        if key == 'about' && theme.menu[key]
+            include ../sections/_about
+        if key == 'blog' && theme.menu[key]
+            include ../sections/_blog
+        if key == 'contact' && theme.menu[key]
+            include ../sections/_contact

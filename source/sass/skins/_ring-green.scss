@@ -1,0 +1,117 @@
+// Colors
+$button-background: color('green', 'accent-2');
+$button-color: $black;
+
+// Ring variables
+$diameter: 600px;
+$radius: ($diameter / 2);
+$shadow-size: ($radius / 9);
+$opacity: .8;
+$acceleration: 10s;
+$ring-color-1: transparentize(color('teal', 'accent-2'), .3);
+$ring-color-2: transparentize(color('indigo', 'accent-4'), .3);
+
+// Skin customisation
+.ring-green-skin {
+    .navbar-fixed {
+        height: 0;
+    }
+    
+    .btn,
+    .btn-large {
+        color: $button-color;
+        background-color: $button-background;
+    }
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+        background-color: color('green', 'accent-2');
+
+        h1 {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            padding: 0 3rem;
+            margin: 0;
+            font-size: 7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: color('light-green', 'accent-4');
+            text-transform: uppercase;
+            mix-blend-mode: difference;
+
+            @media #{$small-and-down} {
+                padding: 0 1rem;
+                font-size: 4rem;
+            }
+        }
+    }
+
+    // One ring... to rule them all :-)
+    .ring {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: $diameter + 50;
+        height: $diameter;
+        margin-top: -$radius;
+        margin-left: -$radius - 25;
+    }
+
+    .ring::after,
+    .ring::before {
+        @include transform-origin(center center);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        content: '';
+    }
+
+    .ring::after {
+        @include animation(clockwise $acceleration linear infinite);
+        box-shadow: inset 0 $shadow-size 0 darken($ring-color-1, 25%),
+        inset $shadow-size 0 0 darken($ring-color-1, 10%),
+        inset 0 - $shadow-size 0 lighten($ring-color-1, 10%),
+        inset #{-$shadow-size} 0 0 lighten($ring-color-1, 25%);
+    }
+
+    .ring::before {
+        @include animation(counterclockwise $acceleration linear infinite);
+        box-shadow: inset 0 $shadow-size 0 darken($ring-color-2, 25%),
+        inset $shadow-size 0 0 darken($ring-color-2, 10%),
+        inset 0 - $shadow-size 0 lighten($ring-color-2, 10%),
+        inset #{-$shadow-size} 0 0 lighten($ring-color-2, 25%);
+    }
+
+    @include keyframes(clockwise) {
+        0% {
+            @include transform(rotateZ(0deg) scaleX(1) scaleY(1));
+        }
+
+        50% {
+            @include transform(rotateZ(180deg) scaleX(.87) scaleY(.95));
+        }
+
+        100% {
+            @include transform(rotateZ(360deg) scaleX(1) scaleY(1));
+        }
+    }
+
+    @include keyframes(counterclockwise) {
+        0% {
+            @include transform(rotateZ(0deg) scaleX(1) scaleY(1));
+        }
+
+        50% {
+            @include transform(rotateZ(-180deg) scaleX(.98) scaleY(.89));
+        }
+
+        100% {
+            @include transform(rotateZ(-360deg) scaleX(1) scaleY(1));
+        }
+    }
+}

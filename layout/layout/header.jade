@@ -1,0 +1,19 @@
+// Navigation bar
+include ../mixins/menu-list.jade
+header.navbar-fixed
+    nav
+        .container
+            .nav-wrapper
+                a.brand-logo(href='#!')= `${config.title}` 
+
+                // Default navigation
+                ul.right.hide-on-med-and-down.table-of-contents
+                    +list
+                    
+                // Visible on medium and smaller devices
+                ul#slide-out.side-nav
+                    +list
+                    
+                // Hamburger
+                a.button-collapse.valign-wrapper(href='#', data-activates='slide-out')
+                    .hamburger

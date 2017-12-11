@@ -1,0 +1,12 @@
+footer.page-footer {
+    color: $black;
+    background-color: $light-grey;
+
+    .footer-copyright {
+        color: $black;
+    }
+
+    input[type=submit]:focus {
+        outline: 0;
+    }
+}
