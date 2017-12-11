@@ -6,3 +6,7 @@ menu: # To remove a menu, just leave the value blank.
   blog: Blog
   about: About
   contact: 
+#default featured image for posts
+featured: "/img/default-new-blog.jpg"
+#default background image for posts
+background: "/img/default-background.jpg"

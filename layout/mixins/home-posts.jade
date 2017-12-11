@@ -1,16 +1,18 @@
 mixin top5posts
     if page.posts
         - var ps = page.posts.toArray()
-        - var author, anchor
+        - var author, anchor, featured, background
         - var i = 0
         each post in ps
             if i == 5
                 - break
             - author = post.author || config.author
             - anchor = 'post' + i
+            - featured = post.featured || theme.featured
+            - background = post.background || theme.background
             if i < 2
                 a.col.s12.l6.padding-bottom.modal-trigger(href='#' + `${anchor}`)
-                    .rectangle(style='background-image: url(' + `${url_for(post.featured)}` +')')
+                    .rectangle(style='background-image: url(' + `${url_for(featured)}` +')')
                       .content.valign-wrapper.center
                           div= `${post.title}`
                               small
@@ -18,7 +20,7 @@ mixin top5posts
                                   | &nbsp;by #{author}
             else
                 a.col.s12.l4.padding-bottom.modal-trigger(href='#' + `${anchor}`)
-                    .square(style='background-image: url(' + `${url_for(post.featured)}` +')')
+                    .square(style='background-image: url(' + `${url_for(featured)}` +')')
                       .content.valign-wrapper.center
                           .smaller= `${post.title}`
                               small
@@ -29,7 +31,7 @@ mixin top5posts
             div(id=`${anchor}`).modal.bottom-sheet
                 .modal-close.absolute &times;
                 .modal-cover
-                    .rectangle-50(style='background-image: url(./assets/images/blog/colorful-lady.jpg)')
+                    .rectangle-50(style='background-image: url(' + `${url_for(background)}` + ')')
                 .modal-content
                     .row
                         .col.s12.l8.offset-l2
