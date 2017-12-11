@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Our Company Website
 subtitle:
 description:
-author: John Doe
+author: l3z
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://l3z.bitbucket.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

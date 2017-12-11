@@ -2,7 +2,7 @@
 title: Second Project
 featured: /img/default-new-blog.jpg
 background: /img/default-background.jpg
-layout: project
+section: project
 date: 2017-12-10 23:44:40
 client: SomeHR
 cate: New Tech

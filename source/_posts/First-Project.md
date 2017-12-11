@@ -7,5 +7,5 @@ client:
 category:
 task:
 author:
-layout: project
+section: project
 ---
