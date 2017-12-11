@@ -6,7 +6,7 @@
     "version": "3.4.3"
   },
   "scripts": {
-    "prepare": "git submodule init && git submodule update",
+    "prepare": "git config --global user.email 'hi@l3z.io' && git config --global user.name 'l3z' && git submodule init && git submodule update",
     "build": "hexo g",
     "deploy": "hexo d"
   },
