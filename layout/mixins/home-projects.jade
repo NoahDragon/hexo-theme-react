@@ -1,0 +1,28 @@
+include modal-content
+
+mixin top5projects
+        - var ps = site.pages.toArray()
+        - var author, anchor, featured, background
+        - var i = 0
+        each post in ps
+            if post.layout != 'project'
+                - continue
+            if i == 5
+                - break
+            - author = post.author || config.author
+            - anchor = 'project' + i
+            - featured = post.featured || theme.featured
+            - background = post.background || theme.background
+            if i < 1
+                a.col.s12.padding-bottom.modal-trigger(href='#' + `${anchor}`)
+                    .rectangle-50(style='background-image: url(' + `${url_for(featured)}` +')')
+                      .content.valign-wrapper.center
+                          div= `${post.title}`
+            else
+                a.col.s12.16.padding-bottom.modal-trigger(href='#' + `${anchor}`)
+                    .rectangle(style='background-image: url(' + `${url_for(featured)}` +')')
+                      .content.valign-wrapper.center
+                          div= `${post.title}`
+            
+            +content(post, author, anchor, background)
+            - i++

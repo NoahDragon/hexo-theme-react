@@ -1,6 +1,7 @@
+include modal-content
+
 mixin top5posts
-    if page.posts
-        - var ps = page.posts.toArray()
+        - var ps = site.posts.toArray()
         - var author, anchor, featured, background
         - var i = 0
         each post in ps
@@ -27,33 +28,5 @@ mixin top5posts
                                   time(datetime=`${post.date}`) #{post.date.format("YYYY-MM-DD")} 
                                   | &nbsp;by #{author}
             
-            // Post modal
-            div(id=`${anchor}`).modal.bottom-sheet
-                .modal-close.absolute &times;
-                .modal-cover
-                    .rectangle-50(style='background-image: url(' + `${url_for(background)}` + ')')
-                .modal-content
-                    .row
-                        .col.s12.l8.offset-l2
-                            h4= `${post.title}`
-
-                            p.flow-text.grey-text.
-                                Author: #{author}<br>
-                                Date: #{post.date}
-
-                            .divider
-
-                            section !{post.content}
-
-                            .divider
-
-                    .row
-                        .col.s12.center
-                            p.flow-text Share this
-                            p.flow-text.social
-                                a.facebook(href='#!') facebook
-                                a.googleplus(href='#!') google+
-                                a.vk(href='#!') vk
-                                a.twitter(href='#!') twitter
-                                a.pinterest(href='#!') pinterest
+            +content(post, author, anchor, background)
             - i++
