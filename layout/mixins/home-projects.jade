@@ -5,7 +5,7 @@ mixin top5projects
         - var author, anchor, featured, background
         - var i = 0
         each post in ps
-            if post.layout != 'project'
+            if post.section != 'project'
                 - continue
             if i == 5
                 - break
