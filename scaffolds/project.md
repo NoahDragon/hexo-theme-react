@@ -1,9 +1,11 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+client:
+category:
+task:
 author:
 featured: /img/default-new-blog.jpg
 background: /img/default-background.jpg
-layout: post
+layout: project
 ---
