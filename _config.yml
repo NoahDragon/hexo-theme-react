@@ -1,15 +1,15 @@
 menu: # To remove a menu, just leave the value blank.
   home: Home
   projects: Projects
-  services: 
-  prices: 
+  services: Services
+  prices: Prices
   blog: Blog
   about: About
-  contact:
+  contact: Contact
 
 #show the subscribe area
 #default false
-subscribe: false
+subscribe: true
 
 #default featured image for posts
 featured: "/img/default-new-blog.jpg"
