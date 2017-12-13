@@ -1,0 +1,107 @@
+mixin hero(themename)
+    - var subtitle = config.subtitle
+    case themename
+        when 'combustion-purple'
+                section#hero.hero.full-height.valign-wrapper.scrollspy
+                    canvas#canvas
+                h1.center #{subtitle}
+        when 'combustion-yellow'
+                section#hero.hero.full-height.valign-wrapper.scrollspy
+                    canvas#canvas
+                h1.center #{subtitle}
+        when 'fuzzy-hue'
+                section#hero.hero.full-height.valign-wrapper.scrollspy
+                    h1.center #{subtitle}
+        when 'fuzzy-saturation'
+                section#hero.hero.full-height.valign-wrapper.scrollspy
+                    h1.center #{subtitle}
+        when 'ring-blue'
+                section#hero.hero.full-height.valign-wrapper.scrollspy
+                    #ring.ring
+                    h1.center #{subtitle}
+        when 'ring-green'
+                section#hero.hero.full-height.valign-wrapper.scrollspy
+                    #ring.ring
+                    h1.center #{subtitle}
+        when 'tunnel'
+                section#hero.hero.full-height.valign-wrapper.scrollspy
+                    #tunnel.tunnel
+                        h1.center #{subtitle}
+        when 'waves-deep-purple'
+                section#hero.hero.full-height.valign-wrapper.scrollspy
+                    h1.center Developing beautiful things that make a difference
+                    canvas#waves.waves
+        when 'waves-light-blue'
+                section#hero.hero.full-height.valign-wrapper.scrollspy
+                    h1.center Making your ideas<br>come to life
+                    canvas#waves.waves
+
+mixin vars(themename)
+    case themename
+        when 'combustion-purple'
+                - var bodyClass = 'combustion-purple-skin'
+                - var formType = 'classic'
+        when 'combustion-yellow'
+                - var bodyClass = 'combustion-yellow-skin'
+                - var formType = 'human'
+        when 'fuzzy-hue'
+                - var bodyClass = 'fuzzy-hue-skin'
+                - var formType = 'classic'
+        when 'fuzzy-saturation'
+                - var bodyClass = 'fuzzy-saturation-skin'
+                - var formType = 'classic'
+        when 'ring-blue'
+                - var bodyClass = 'ring-pink-skin'
+                - var formType = 'human'
+        when 'ring-green'
+                - var bodyClass = 'ring-green-skin'
+                - var formType = 'classic'
+        when 'tunnel'
+                - var bodyClass = 'tunnel-skin'
+                - var formType = 'human'
+        when 'waves-deep-purple'
+                - var bodyClass = 'waves-deep-purple-skin'
+                - var formType = 'classic'
+        when 'waves-light-blue'
+                - var bodyClass = 'waves-light-blue-skin'
+                - var formType = 'human'
+
+mixin spinner(themename)
+    case themename
+        when 'combustion-purple'
+        when 'combustion-yellow'
+        when 'ring-blue'
+        when 'ring-green'
+                .spinner-double-dot-out
+        when 'fuzzy-hue'
+        when 'fuzzy-saturation'
+                .spinner-double-wave-in
+        when 'tunnel'
+                .spinner-section-far
+        when 'waves-deep-purple'
+        when 'waves-light-blue'
+                .spinner-double-section
+
+mixin skin(themename)
+    case themename
+        when 'combustion-purple'
+                script(src='./assets/js/skins/min/combustion-purple.min.js')
+        when 'combustion-yellow'
+                script(src='./assets/js/skins/min/combustion-yellow.min.js')
+        when 'fuzzy-hue'
+                script(src='./assets/js/skins/min/fuzzy-hue.min.js')
+        when 'fuzzy-saturation'
+                script(src='./assets/js/skins/min/fuzzy-saturation.min.js')
+        when 'ring-blue'
+                script(src='./assets/js/skins/min/ring.min.js')
+        when 'ring-green'
+                script(src='./assets/js/skins/min/ring.min.js')
+        when 'tunnel'
+                script(src='./libs/three.js/r58/three.min.js')
+                script(src='./assets/js/skins/min/tunnel.min.js')
+        when 'waves-deep-purple'
+                script(src='./libs/sine-waves/sine-waves.min.js')
+                script(src='./assets/js/skins/min/waves-deep-purple.min.js')
+        when 'waves-light-blue'
+                script(src='./libs/sine-waves/sine-waves.min.js')
+                script(src='./assets/js/skins/min/waves-light-blue.min.js')

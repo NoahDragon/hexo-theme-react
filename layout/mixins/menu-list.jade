@@ -1,8 +1,7 @@
 mixin list
+    li
+        a(href='#hero')= 'Home'
     - for ( var key in theme.menu )
         li
             if theme.menu[key]
-                if key == 'home'
-                    a(href='#hero')= `${theme.menu[key]}`
-                else
-                    a(href='#'+`${key}`)= `${theme.menu[key]}`
+                a(href='#'+`${key}`)= `${theme.menu[key]}`
