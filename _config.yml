@@ -4,7 +4,9 @@ menu: # To remove a menu, just leave the value blank.
   prices: Prices
   blog: Blog
   about: Us
+  philosophy: Philosophy
   contact: Contact
+  faqs: FAQs
   
 #show the subscribe area
 #default false

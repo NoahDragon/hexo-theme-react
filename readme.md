@@ -34,6 +34,10 @@ hexo clean && hexo g
 
 ## Usage
 
+### Scaffolds
+
+Sample scaffolds are in `_scaffolds` folder.
+
 ### Blog
 
 To publish posts into the blog section on the home page, the layout in front matters should set to `post`.
