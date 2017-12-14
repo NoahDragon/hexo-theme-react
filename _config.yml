@@ -1,12 +1,35 @@
-menu: # To remove a menu, just leave the value blank.
-  projects: Projects
-  services: Services
-  prices: Prices
-  blog: Blog
-  about: Us
-  philosophy: Philosophy
-  contact: Contact
-  faqs: FAQs
+# There are two type of menu link:
+#    1. Jump to current page anchor, simple leave the external-link blank.
+#    2. Open link in a new tab, please put the full url in the external-link field.
+# To hide a menu, leave the display-name blank.
+menu:
+  projects:
+    display-name: Projects
+    external-link:
+  services:
+    display-name: Services
+    external-link:
+  prices:
+    display-name:
+    external-link:
+  blog:
+    display-name: Blog
+    external-link:
+  about:
+    display-name: Us
+    external-link:
+  philosophy:
+    display-name: Philosophy
+    external-link:
+  contact:
+    display-name: Contact
+    external-link:
+  faqs:
+    display-name: FAQs
+    external-link:
+  google:
+    display-name: Google
+    external-link: https://google.com
   
 #show the subscribe area
 #default false

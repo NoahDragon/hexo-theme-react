@@ -1,17 +1,20 @@
 mixin blocks
-    if theme.menu['projects']
-        include ../sections/_projects
-    if theme.menu['services']
-        include ../sections/_services
-    if theme.menu['prices']
-        include ../sections/_prices
-    if theme.menu['about']
-        include ../sections/_about
-    if theme.menu['blog']
-        include ../sections/_blog
-    if theme.menu['contact']
-        include ../sections/_contact
-    if theme.menu['faqs']
-        include ../sections/_faqs
-    if theme.menu['philosophy']
-        include ../sections/_philosophy
+    - for ( var key in theme.menu)
+        if theme.menu[key]['display-name']
+            case key
+                when 'projects'
+                    include ../sections/_projects
+                when 'services'
+                    include ../sections/_services
+                when 'prices'
+                    include ../sections/_prices
+                when 'about'
+                    include ../sections/_about
+                when 'blog'
+                    include ../sections/_blog
+                when 'contact'
+                    include ../sections/_contact
+                when 'faqs'
+                    include ../sections/_faqs
+                when 'philosophy'
+                    include ../sections/_philosophy
