@@ -1,7 +1,7 @@
 Hexo Theme React
 ---------------------
 
-React theme migrated from https://github.com/pimmey/react-docs
+React theme migrated from https://github.com/pimmey/react-docs, the purchase link: https://themeforest.net/item/react-material-design-multipurpose-template/14918846
 
 The theme is designed for Hexo, please make sure have the Hexo installed (https://hexo.io).
 
