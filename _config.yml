@@ -16,24 +16,21 @@ menu:
     display-name: Blog
     external-link:
   about:
-    display-name: Us
+    display-name: About
     external-link:
   philosophy:
     display-name: Philosophy
     external-link:
   contact:
-    display-name: Contact
+    display-name:
     external-link:
   faqs:
     display-name: FAQs
     external-link:
-  google:
-    display-name: Google
-    external-link: https://google.com
   
-#show the subscribe area
-#default false
-subscribe: true
+# show the subscribe area
+# default false
+subscribe: false
 
 # Available themes:
 #        combustion-purple
@@ -47,8 +44,8 @@ subscribe: true
 #        waves-light-blue
 theme: ring-blue
 
-#default featured image for posts
+# default featured image for posts
 featured: "/img/default-new-blog.jpg"
 
-#default background image for posts
+# default background image for posts
 background: "/img/default-background.jpg"
