@@ -34,9 +34,26 @@ hexo clean && hexo g
 
 ## Usage
 
+### Limitation
+
+Currently only support the latest 5 projects and posts. To support blog/project list, may need to implement new layout files.
+
 ### Scaffolds
 
 Sample scaffolds are in `_scaffolds` folder.
+
+### Themes
+
+The original React theme provides several themes, we inherit them. The theme could be configured in the theme `_config.yml`. The followings are availiable themes ([preview](http://react.pimmey.com/)):
+* combustion-purple
+* combustion-yellow
+* fuzzy-hue
+* fuzzy-saturation
+* ring-blue
+* ring-green
+* tunnel
+* waves-deep-purple
+* waves-light-blue
 
 ### Blog
 
