@@ -1,0 +1,11 @@
+mixin tab(t, n)
+    li.tab.col.s4.m3.l2
+        a(href='#philosophy-' + `${n}`)
+            i(class='icon-' + `${t.icon}`)
+            h5 #{t.title}
+            
+mixin content(t, n)
+    div(id='philosophy-' + `${n}`).col.s12.l8.offset-l2
+        h5 #{t.title}
+        p.flow-text.center.margin-top-more.
+            #{t.content}

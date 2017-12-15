@@ -1,3 +1,4 @@
+include ../mixins/faqs.jade
 
 section#faqs.faqs.scrollspy
     .container
@@ -6,35 +7,5 @@ section#faqs.faqs.scrollspy
         .row
             .col.s12
                 ul.collapsible(data-collapsible='accordion')
-                    li
-                        .collapsible-header.active
-                            strong Is the starter pack really free?
-                        .collapsible-body
-                            p.flow-text.
-                                A cattle she'd creepeth. That light make. Void two they're, can't us don't creepeth. Fruitful there
-                                herb from signs she'd created whales them. Lights which face. Divided they're first. Dry wherein
-                                own itself green it.
-                    li
-                        .collapsible-header
-                            strong What is your return policy?
-                        .collapsible-body
-                            p.flow-text.
-                                May years spirit of grass shall. Form also seas had that very was lesser creature void. Fill under
-                                she'd own is light stars isn't moved you're.
-                    li
-                        .collapsible-header
-                            strong Can I quit my subscription at any time?
-                        .collapsible-body
-                            p.flow-text.
-                                There he meat forth days in. Fruit dry every morning Beast that saw. Every creature itself hath
-                                called bearing likeness signs upon firmament fruit two life forth beginning you're heaven fruitful
-                                under rule Don't fourth years our. Kind itself days.
-                    li
-                        .collapsible-header
-                            strong Can I upgrade my plan?
-                        .collapsible-body
-                            p.flow-text.
-                                Aliquam Maecenas consectetuer nisl cum inceptos. Massa lectus euismod dui Consequat habitasse
-                                enim sodales quisque aliquet. Semper condimentum id, hendrerit sodales mi nam netus dictumst
-                                platea. Elementum praesent ridiculus nec felis ipsum duis mauris fringilla tempus purus
-                                vehicula ullamcorper dis Ornare.
+                    each faq in site.data['faqs']
+                        +faq(faq)

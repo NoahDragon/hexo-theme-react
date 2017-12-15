@@ -44,8 +44,11 @@ subscribe: false
 #        waves-light-blue
 theme: ring-blue
 
+# default general photo for about section
+general-photo: "./assets/images/team/whiteboard.jpg"
+
 # default featured image for posts
-featured: "/img/default-new-blog.jpg"
+featured: "./img/default-new-blog.jpg"
 
 # default background image for posts
-background: "/img/default-background.jpg"
+background: "./img/default-background.jpg"

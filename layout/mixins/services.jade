@@ -1,0 +1,8 @@
+mixin service(s)
+    .col.s12.m6.l4.padding-bottom
+        .square
+            .content
+                i(class='icon-'+`${s.icon}`)
+                .description
+                    h4 #{s.title}
+                    p.flow-text #{s.content}

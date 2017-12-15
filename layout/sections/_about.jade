@@ -1,38 +1,17 @@
+include ../mixins/about
+
 section#about.about.scrollspy
     .container
         h2: span About us
         h3 Meet the superheroes
         .row
             // About general photo
-            .col.s12.l6.padding-bottom
-                .rectangle(style='background-image: url(./assets/images/team/whiteboard.jpg)')
+            +general-photo
 
             // About carousel
             .owl-carousel.owl-theme.col.s12.l6
-                a.col.s12.modal-trigger(href='#greg')
-                    .rectangle(style='background-image: url(./assets/images/team/greg.jpg)')
-                        .content
-                            .name Greg Jason
-                a.col.s12.modal-trigger(href='#annie')
-                    .rectangle(style='background-image: url(./assets/images/team/annie.jpg)')
-                        .content
-                            .name Annie Redhat
-                a.col.s12.modal-trigger(href='#kate')
-                    .rectangle(style='background-image: url(./assets/images/team/kate.jpg)')
-                        .content
-                            .name Kate Willson
-                a.col.s12.modal-trigger(href='#russell')
-                    .rectangle(style='background-image: url(./assets/images/team/russell.jpg)')
-                        .content
-                            .name Russell Morgan
-                a.col.s12.modal-trigger(href='#jane')
-                    .rectangle(style='background-image: url(./assets/images/team/jane.jpg)')
-                        .content
-                            .name Jane Stitch
-                a.col.s12.modal-trigger(href='#roo')
-                    .rectangle(style='background-image: url(./assets/images/team/roo.jpg)')
-                        .content
-                            .name Roo
+                each star, i in site.data['stars']
+                    +star(star, i)
                 .col.s12
                     .rectangle.grey.lighten-3
                         .content.valign-wrapper.you
@@ -40,9 +19,5 @@ section#about.about.scrollspy
                                 br
                                 a(href='mailto:job@react?subject=Job%20Application') Apply now
 
-            include ../team-modals/_greg
-            include ../team-modals/_annie
-            include ../team-modals/_kate
-            include ../team-modals/_russell
-            include ../team-modals/_jane
-            include ../team-modals/_roo
+            each star, i in site.data['stars']
+                +detail(star, i)

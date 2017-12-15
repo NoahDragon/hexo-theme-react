@@ -1,0 +1,44 @@
+mixin general-photo
+    .col.s12.l6.padding-bottom
+        .rectangle(style='background-image: url(' + `${theme['general-photo']}` + ')')
+        
+mixin star(s, i)
+    a.col.s12.modal-trigger(href='#star-' + `${i}`)
+        .rectangle(style='background-image: url(' + `${s.photo}` + ')')
+            .content
+                .name #{s.name}
+                
+mixin detail(s, i)
+    div(id='star-' + `${i}`).modal.bottom-sheet
+        .modal-close.absolute &times;
+        .modal-cover.col.s12.l6.no-padding
+            .square(style='background-image: url(' + `${s.photo}` + ')')
+        .modal-content.col.s12.l6.no-padding
+            .square
+                .content
+                    h4 #{s.name}
+                    h5 #{s.position}
+                    .divider
+                    p.flow-text.
+                        !{s.detail}
+                    if s.social
+                        .row
+                            .col.s12.center
+                                p.flow-text Follow her
+                                p.flow-text.social
+                                    if s.social.google
+                                        a.googleplus(href=`${s.social.google}`) google+
+                                    if s.social.facebook
+                                        a.facebook(href=`${s.social.facebook}`) facebook
+                                    if s.social.pinterest
+                                        a.pinterest(href=`${s.social.pinterest}`) pinterest
+                                    if s.social.twitter
+                                        a.twitter(href=`${s.social.twitter}`) twitter
+                                    if s.social.github
+                                        a.github(href=`${s.social.github}`) github
+                                    if s.social.dribbble
+                                        a.dribbble(href=`${s.social.dribbble}`) dribbble
+                                    if s.social.vk
+                                        a.vk(href=`${s.social.vk}`) vk
+                                    if s.social.linkedin
+                                        a.linkedin(href=`${s.social.linkedin}`) linkedin
