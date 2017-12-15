@@ -1,0 +1,90 @@
+- name: Greg Jason
+  position: CEO
+  photo: ./assets/images/team/greg.jpg
+  detail: |
+    Wherein brought, seas light fowl night fifth god them. Grass heaven seed. Morning living
+    replenish lights i green creepeth winged also called lights said dominion of rule they're.
+    Every can't, spirit replenish night.
+
+    Moving life lights. Abundantly own fourth all moved saw cattle given fourth own may.
+    Creepeth first of moved years form. Given good third to image bearing appear. Grass him
+    place tree set. Upon spirit very let two. Was thing.
+  social:
+    google: "#!"
+    facebook: "#!"
+    pinterest: "#!"
+    twitter: "#!"
+    github:
+    dribbble:
+    vk:
+- name: Annie Redhat
+  position: VP &amp; Marketing Supervisor
+  photo: ./assets/images/team/annie.jpg
+  detail: |
+    Wherein brought, seas light fowl night fifth god them. Grass heaven seed. Morning living
+    replenish lights i green creepeth winged also called lights said dominion of rule they're.
+    Every can't, spirit replenish night.
+
+    Moving life lights. Abundantly own fourth all moved saw cattle given fourth own may.
+    Creepeth first of moved years form. Given good third to image bearing appear. Grass him
+    place tree set. Upon spirit very let two. Was thing.
+  social:
+    google: "https://google.com"
+- name: Kate Willson
+  position: Team leader 
+  photo: ./assets/images/team/kate.jpg
+  detail: |
+    Wherein brought, seas light fowl night fifth god them. Grass heaven seed. Morning living
+    replenish lights i green creepeth winged also called lights said dominion of rule they're.
+    Every can't, spirit replenish night.
+
+    Moving life lights. Abundantly own fourth all moved saw cattle given fourth own may.
+    Creepeth first of moved years form. Given good third to image bearing appear. Grass him
+    place tree set. Upon spirit very let two. Was thing.
+  social:
+    linkedin: "#!"
+    googleplus: "#!"
+    github: "#!"
+    pinterest: "#!"
+    twitter: "#!"
+- name: Russell Morgan
+  position: Senior UX/UI designer
+  photo: ./assets/images/team/russell.jpg
+  detail: |
+    Wherein brought, seas light fowl night fifth god them. Grass heaven seed. Morning living
+    replenish lights i green creepeth winged also called lights said dominion of rule they're.
+    Every can't, spirit replenish night.
+
+    Moving life lights. Abundantly own fourth all moved saw cattle given fourth own may.
+    Creepeth first of moved years form. Given good third to image bearing appear. Grass him
+    place tree set. Upon spirit very let two. Was thing.
+  social:
+    dribbble: "#!"
+    vk: "#!"
+- name: Jane Stitch
+  position: Content manager
+  photo: ./assets/images/team/jane.jpg
+  detail: |
+    Wherein brought, seas light fowl night fifth god them. Grass heaven seed. Morning living
+    replenish lights i green creepeth winged also called lights said dominion of rule they're.
+    Every can't, spirit replenish night.
+
+    Moving life lights. Abundantly own fourth all moved saw cattle given fourth own may.
+    Creepeth first of moved years form. Given good third to image bearing appear. Grass him
+    place tree set. Upon spirit very let two. Was thing.
+  social:
+- name: Roo
+  position: Security &amp; QA
+  photo: ./assets/images/team/roo.jpg
+  detail: |
+    Wherein brought, seas light fowl night fifth god them. Grass heaven seed. Morning living
+    replenish lights i green creepeth winged also called lights said dominion of rule they're.
+    Every can't, spirit replenish night.
+
+    Moving life lights. Abundantly own fourth all moved saw cattle given fourth own may.
+    Creepeth first of moved years form. Given good third to image bearing appear. Grass him
+    place tree set. Upon spirit very let two. Was thing.
+    img.responsive-img(src='./assets/images/team/roo-modal.jpg', alt='Roo at work')
+    p Roo testing out one of the latest projects.
+  social:
+    linkedin: "https://baidu.com"
