@@ -48,6 +48,12 @@ Sample scaffolds are in `sample/_scaffolds` folder. To use them, simply copy the
 
 For the services, philosophy, about, and FAQs data, the sample files is in `sample/_data`. To use it, simply copy the `sample/_data` folder into the hexo `source/_data` folder.
 
+The icons are from http://www.linea.io/, so please make sure the icon name is an existing linea icon.
+
+The detail feild in `stars.yml` is allow HTML tags.
+
+The general photo in about section could be set in the theme config `general-photo`.
+
 ### Themes
 
 The original React theme provides several themes, we inherit them. The theme could be configured in the theme `_config.yml`. The followings are availiable themes ([preview](http://react.pimmey.com/)):
