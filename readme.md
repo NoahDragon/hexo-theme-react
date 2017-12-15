@@ -38,9 +38,15 @@ hexo clean && hexo g
 
 Currently only support the latest 5 projects and posts. To support blog/project list, may need to implement new layout files.
 
-### Scaffolds
+### Samples
 
-Sample scaffolds are in `_scaffolds` folder.
+#### Scaffolds
+
+Sample scaffolds are in `sample/_scaffolds` folder. To use them, simply copy the scaffolds in to the hexo `scaffolds` folder.
+
+#### Data
+
+For the services, philosophy, about, and FAQs data, the sample files is in `sample/_data`. To use it, simply copy the `sample/_data` folder into the hexo `source/_data` folder.
 
 ### Themes
 
