@@ -15,7 +15,7 @@ mixin top5posts
             - background = post.background || theme.background
             if i < 2
                 a.col.s12.l6.padding-bottom.modal-trigger(href='#' + `${anchor}`)
-                    .rectangle(style='background-image: url(' + `${url_for(featured)}` +')')
+                    .rectangle(style='background-image: url(' + `${featured}` +')')
                       .content.valign-wrapper.center
                           div= `${post.title}`
                               small
@@ -23,7 +23,7 @@ mixin top5posts
                                   | &nbsp;by #{author}
             else
                 a.col.s12.l4.padding-bottom.modal-trigger(href='#' + `${anchor}`)
-                    .square(style='background-image: url(' + `${url_for(featured)}` +')')
+                    .square(style='background-image: url(' + `${featured}` +')')
                       .content.valign-wrapper.center
                           .smaller= `${post.title}`
                               small

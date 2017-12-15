@@ -15,12 +15,12 @@ mixin top5projects
             - background = post.background || theme.background
             if i < 1
                 a.col.s12.padding-bottom.modal-trigger(href='#' + `${anchor}`)
-                    .rectangle-50(style='background-image: url(' + `${url_for(featured)}` +')')
+                    .rectangle-50(style='background-image: url(' + `${featured}` +')')
                         .content.valign-wrapper.center
                             div= `${post.title}`
             else
                 a.col.s12.l6.padding-bottom.modal-trigger(href='#' + `${anchor}`)
-                    .rectangle(style='background-image: url(' + `${url_for(featured)}` +')')
+                    .rectangle(style='background-image: url(' + `${featured}` +')')
                         .content.valign-wrapper.center
                             div= `${post.title}`
             
