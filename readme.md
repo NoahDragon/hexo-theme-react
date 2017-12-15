@@ -40,6 +40,14 @@ Currently only support the latest 5 projects and posts. To support blog/project 
 
 ### Samples
 
+#### Hexo Source
+
+The hexo site source code could be found in branch demo-source https://github.com/NoahDragon/hexo-theme-react/tree/demo-source . You could clone it to local folder and replace the `themes/react` which current repo.
+
+```
+git clone -b demo-source https://github.com/NoahDragon/hexo-theme-react.git
+```
+
 #### Scaffolds
 
 Sample scaffolds are in `sample/_scaffolds` folder. To use them, simply copy the scaffolds in to the hexo `scaffolds` folder.
