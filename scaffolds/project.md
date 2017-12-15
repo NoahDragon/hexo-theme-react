@@ -5,7 +5,7 @@ client:
 cate:
 task:
 author:
-featured: /img/default-new-blog.jpg
-background: /img/default-background.jpg
+featured: ./img/default-new-blog.jpg
+background: ./img/default-background.jpg
 section: project
 ---

@@ -1,7 +1,7 @@
 ---
 title: What differs a Leader from a Manager
-featured: /img/leader.webp
-background: /img/leader.webp
+featured: ./img/leader.webp
+background: ./img/leader.webp
 section: blog
 date: 2010-04-02 21:20:51
 tags:

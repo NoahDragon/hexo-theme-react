@@ -1,7 +1,7 @@
 ---
 title: Compensation System for Startups
-featured: /img/startup.webp
-background: /img/startup.webp
+featured: ./img/startup.webp
+background: ./img/startup.webp
 section: blog
 date: 2023-08-19 21:14:55
 tags:

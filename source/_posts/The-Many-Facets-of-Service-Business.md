@@ -1,7 +1,7 @@
 ---
 title: The Many Facets of Service Business
-featured: /img/facet.webp
-background: /img/facet.webp
+featured: ./img/facet.webp
+background: ./img/facet.webp
 section: blog
 date: 2017-06-17 21:18:55
 tags:

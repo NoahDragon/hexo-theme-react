@@ -1,7 +1,7 @@
 ---
 title: Doing business with China
-featured: /img/business.webp
-background: /img/business.webp
+featured: ./img/business.webp
+background: ./img/business.webp
 section: blog
 date: 2017-06-17 21:17:23
 tags:

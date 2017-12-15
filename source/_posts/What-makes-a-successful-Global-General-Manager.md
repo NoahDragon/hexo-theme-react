@@ -1,7 +1,7 @@
 ---
 title: What makes a successful Global General Manager?
-featured: /img/management.webp
-background: /img/management.webp
+featured: ./img/management.webp
+background: ./img/management.webp
 section: blog
 date: 2017-06-15 21:11:28
 tags:
