@@ -6,7 +6,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var jade = require('gulp-jade');
+var pug = require('gulp-pug');
 var beautify = require('gulp-jsbeautifier');
 var nano = require('gulp-cssnano');
 var rename = require('gulp-rename');
@@ -21,7 +21,7 @@ var uglify = require('gulp-uglify');
  Directory variables
  */
 var sassSrcDir = './source/sass/';
-var jadeSrcDir = './layout/';
+var pugSrcDir = './layout/';
 var assetsDir = './source/assets/';
 var compiledStylesDir = assetsDir + 'css/';
 var libsDir = './source/libs/';
@@ -62,23 +62,23 @@ gulp.task('build:css', function () {
 });
 
 /*
- Building compile jade, beautifying the output
+ Building compile pug, beautifying the output
  */
-gulp.task('jade', function () {
+gulp.task('pug', function () {
     gulp.src(
         [
-            jadeSrcDir + 'ring-green.jade',
-            jadeSrcDir + 'ring-blue.jade',
-            jadeSrcDir + 'tunnel.jade',
-            jadeSrcDir + 'waves-light-blue.jade',
-            jadeSrcDir + 'waves-deep-purple.jade',
-            jadeSrcDir + 'fuzzy-hue.jade',
-            jadeSrcDir + 'fuzzy-saturation.jade',
-            jadeSrcDir + 'combustion-purple.jade',
-            jadeSrcDir + 'combustion-yellow.jade'
+            pugSrcDir + 'ring-green.pug',
+            pugSrcDir + 'ring-blue.pug',
+            pugSrcDir + 'tunnel.pug',
+            pugSrcDir + 'waves-light-blue.pug',
+            pugSrcDir + 'waves-deep-purple.pug',
+            pugSrcDir + 'fuzzy-hue.pug',
+            pugSrcDir + 'fuzzy-saturation.pug',
+            pugSrcDir + 'combustion-purple.pug',
+            pugSrcDir + 'combustion-yellow.pug'
         ]
     )
-        .pipe(jade())
+        .pipe(pug())
         .pipe(beautify({
             html: {
                 indent_char: ' ',
@@ -103,9 +103,9 @@ gulp.task('watch', function () {
         sassSrcDir + 'skins/*.scss'
     ], ['sass']);
     gulp.watch([
-        jadeSrcDir + '*.jade',
-        jadeSrcDir + '**/*.jade'
-    ], ['jade']);
+        pugSrcDir + '*.pug',
+        pugSrcDir + '**/*.pug'
+    ], ['pug']);
 });
 
 /*

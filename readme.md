@@ -10,7 +10,7 @@ The theme is designed for Hexo, please make sure have the Hexo installed (https:
 Prerequisites:
 
 ```
-npm i -S hexo-renderer-jade
+npm i -S hexo-renderer-pug
 npm i -S hexo-renderer-sass
 ```
 
@@ -61,6 +61,20 @@ The icons are from http://www.linea.io/, so please make sure the icon name is an
 The detail feild in `stars.yml` is allow HTML tags.
 
 The general photo in about section could be set in the theme config `general-photo`.
+
+### Disable Sections
+
+If some section should be disabled or removed from the theme, simply set the `display-name` blank, e.g.:
+
+```yaml
+menu:
+  contact:
+    display-name:
+    external-link:
+  faqs:
+    display-name: FAQs
+    external-link:
+```
 
 ### Themes
 
