@@ -10,7 +10,7 @@ The theme is designed for Hexo, please make sure have the Hexo installed (https:
 Prerequisites:
 
 ```
-npm i -S hexo-renderer-jade
+npm i -S hexo-renderer-pug
 npm i -S hexo-renderer-sass
 ```
 
