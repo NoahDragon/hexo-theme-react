@@ -1,10 +1,10 @@
 mixin list
     li
         a(href='#hero')= 'Home'
-    - for ( var key in theme.menu )
-        li
-            if theme.menu[key]['display-name']
-                if theme.menu[key]['external-link']
-                    a(href=`${theme.menu[key]['external-link']}` rel="noopener noreferrer" target="_blank")= `${theme.menu[key]['display-name']}`
-                else
-                    a(href='#'+`${key}`)= `${theme.menu[key]['display-name']}`
+        each val, key in theme.menu
+            if val['display-name']
+                li
+                    if val['external-link']
+                        a(href=`${val['external-link']}` rel="noopener noreferrer" target="_blank")= `${val['display-name']}`
+                    else
+                        a(href='#'+`${key}`)= `${val['display-name']}`

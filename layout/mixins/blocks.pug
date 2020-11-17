@@ -1,20 +1,21 @@
 mixin blocks
-    - for ( var key in theme.menu)
-        if theme.menu[key]['display-name']
-            case key
-                when 'projects'
-                    include ../sections/_projects
-                when 'services'
-                    include ../sections/_services
-                when 'prices'
-                    include ../sections/_prices
-                when 'about'
-                    include ../sections/_about
-                when 'blog'
-                    include ../sections/_blog
-                when 'contact'
-                    include ../sections/_contact
-                when 'faqs'
-                    include ../sections/_faqs
-                when 'philosophy'
-                    include ../sections/_philosophy
+        each val, key in theme.menu
+            // Need to align with the menu-list.pug
+            if val['display-name'] 
+                case key
+                    when 'projects'
+                        include ../sections/_projects
+                    when 'services'
+                        include ../sections/_services
+                    when 'prices'
+                        include ../sections/_prices
+                    when 'about'
+                        include ../sections/_about
+                    when 'blog'
+                        include ../sections/_blog
+                    when 'contact'
+                        include ../sections/_contact
+                    when 'faqs'
+                        include ../sections/_faqs
+                    when 'philosophy'
+                        include ../sections/_philosophy

@@ -62,6 +62,20 @@ The detail feild in `stars.yml` is allow HTML tags.
 
 The general photo in about section could be set in the theme config `general-photo`.
 
+### Disable Sections
+
+If some section should be disabled or removed from the theme, simply set the `display-name` blank, e.g.:
+
+```yaml
+menu:
+  contact:
+    display-name:
+    external-link:
+  faqs:
+    display-name: FAQs
+    external-link:
+```
+
 ### Themes
 
 The original React theme provides several themes, we inherit them. The theme could be configured in the theme `_config.yml`. The followings are availiable themes ([preview](http://react.pimmey.com/)):
