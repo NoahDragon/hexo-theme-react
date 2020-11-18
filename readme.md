@@ -89,6 +89,10 @@ The original React theme provides several themes, we inherit them. The theme cou
 * waves-deep-purple
 * waves-light-blue
 
+### Favicons
+
+To overwrite the default favicons, please create a `favicons` folder under the Hexo site `source` folder (not under current theme folder), and copy the generated favicon package from the https://realfavicongenerator.net/ into it.
+
 ### Blog
 
 To publish posts into the blog section on the home page, the layout in front matters should set to `post`.
